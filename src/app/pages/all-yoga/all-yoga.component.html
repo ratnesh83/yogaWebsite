@@ -1,0 +1,31 @@
+
+<div class="container allyoga">
+  <div class="row">
+    <div class="col-sm-4 yogadata" *ngFor="let yoga of yogas">
+        <div class="card">
+            <img class="card-img-top" src="{{yoga.image}}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{yoga.name}}</h5>
+              <p class="card-text">{{yoga.description}}</p>
+              <a [routerLink]="['/one', yoga._id]" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+      <!-- <div>
+        <h1 [routerLink]="['/one', yoga._id]">{{yoga.name | uppercase}}</h1>
+      </div> -->
+      <!-- <div>
+
+        <h4 class="steps">Steps</h4>
+        <div *ngFor="let step of yoga.steps; let i=index;">
+          <b>{{i+1}}</b>-{{step}}
+        </div>
+      </div> -->
+      <!-- <div>
+        <h4>Precautions</h4>
+        <div *ngFor="let precaution of yoga.precautions;let i=index;">
+          <b>{{i+1}}</b>-{{precaution}}
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
