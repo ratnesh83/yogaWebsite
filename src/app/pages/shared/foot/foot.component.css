@@ -1,11 +1,27 @@
-.footer{
+.footer {
 
-    background-color: rgb(221, 217, 217);
     padding-top: 50px;
 }
 
+.page-footer{
+
+    color:white;
+}
 .footerli{
 
     list-style: none;
     
+}
+
+.list-unstyled>li>a {
+
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.list-unstyled>li>a:hover {
+
+    color:goldenrod;
 }
