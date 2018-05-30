@@ -1,26 +1,26 @@
 <div class="container">
     <div *ngIf="yoga">
         <div class="row">
-
       <div class="col-md-6">
-        <h1>{{yoga[0].name}}</h1>
+        <h1 class="heading">{{yoga[0].name}}</h1>
         <div>
-          <h4>Steps</h4>
-          <div *ngFor="let step of yoga[0].steps ; let i=index;">
+          <h4 class="subheading">Steps</h4>
+          <div *ngFor="let step of yoga[0].steps ; let i=index;" class="steps">
             <b>{{i+1}}.</b> {{step}}
           </div>
-          <h4>Precautions</h4>
+          <h4 class="subheading">Precautions</h4>
           <div *ngFor="let precaution of yoga[0].precautions; let i=index;">
             <b>{{i+1}}.</b> {{precaution}}
           </div>
-          <h4>Benefits</h4>
-          <div *ngFor="let benefit of yoga[0].benefits; let i=index;">
+          <h4 class="subheading">Benefits</h4>
+          <div *ngFor="let benefit of yoga[0].benefits; let i=index;" class="steps">
             <b>{{i+1}}.</b> {{benefit}}
           </div>
         </div>
         </div>
         <div class="col-md-6 img">
-          <img src="{{yoga[0].image}}" alt="Card image cap">
+          <img src="{{yoga[0].image}}" alt="Card image cap"><br><br>
+          <iframe width="100%" height="300" src="https://www.youtube.com/embed/mOGAARW6e1U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         </div>
       </div>
