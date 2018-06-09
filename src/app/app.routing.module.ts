@@ -3,9 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
+    {path: 'app', loadChildren: './public-pages/public-pages.module#PublicPagesModule'},
     {path: '', loadChildren: './pages/pages.module#PagesModule'},
-    // {path: 'not-found', loadChildren: './not-found/not-found.module#NotFoundModule'},
-    // {path: '**', redirectTo:'not-found'}
+    {path: 'not-found', loadChildren: './not-found/not-found.module#NotFoundModule'},
+    {path: '**', redirectTo:'not-found'}
 ];
 
 @NgModule({
